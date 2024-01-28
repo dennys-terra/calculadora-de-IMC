@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styles from './App.module.css'
 import poweredImage from './assets/powered.png'
+import {  calculateImc } from './helpers/imc'
 
 const App = () => {
 
@@ -8,8 +9,9 @@ const App = () => {
   const [weightField, setWeightField] = useState<number>(0)
 
   const handleCalculateButton = () => {
-    if(hightField & weightField){
-      alert('falta implementar a lógica do botão')
+    if(hightField && weightField){
+      calculateImc(hightField, weightField)
+      console.log('entrou')
     }else {
       alert("Digite todos os campos.")
     }
@@ -43,7 +45,7 @@ const App = () => {
         onChange={e => setWeightField(Number(e.target.value))}
         />
 
-        <button onClick={handleCalculateButton}>Calcular IMC</button>
+        <button onClick={ handleCalculateButton}>Calcular IMC</button>
       </div>
       
       
