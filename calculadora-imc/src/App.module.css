@@ -71,4 +71,12 @@ header .headerContainer {
     flex: 1;
     border: 1px solid red;
     margin-left: 40px;
+    display: flex;
+}
+
+.container .rightSide .gridItem {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
