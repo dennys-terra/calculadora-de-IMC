@@ -32,7 +32,7 @@ export const GridItem = ({item} : props) => {
                 <p style={{color: 'green'}}>parabéns, mantenha esse peso.</p>
                 }
                 {item.title === 'Sobrepeso' &&
-                <p style={{color: 'yellow'}}>ops, está um pouco acima do peso, busque ajuda</p>
+                <p style={{color: 'yellow'}}>ops, está um pouco acima..</p>
                 }
                 {item.title === 'Obesidade' &&
                 <p style={{color: 'red'}}>procure um nutricionista urgente!</p>

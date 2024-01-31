@@ -6,7 +6,12 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://img.freepik.com/fotos-gratis/arranjo-de-halteres-de-vista-superior_23-2148531477.jpg?w=1060&t=st=1706726751~exp=1706727351~hmac=2a0a39461d653b3e12a5c1b22a25b39265f3f6e18ec53911e7474da9b20d87da');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
 
 .main {
     padding-bottom: 50px;
