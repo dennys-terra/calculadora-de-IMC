@@ -22,6 +22,23 @@ export const GridItem = ({item} : props) => {
             </div>
             }
 
+            <div className={styles.prhase}>
+
+                {item.title === 'Abaixo' &&
+                <p style={{color: 'red'}}>procure um nutricionista urgente!</p>
+                }
+
+                {item.title === 'Normal' &&
+                <p style={{color: 'green'}}>parabéns, mantenha esse peso.</p>
+                }
+                {item.title === 'Sobrepeso' &&
+                <p style={{color: 'yellow'}}>ops, está um pouco acima do peso, busque ajuda</p>
+                }
+                {item.title === 'Obesidade' &&
+                <p style={{color: 'red'}}>procure um nutricionista urgente!</p>
+                }
+
+            </div>
 
             <div className={styles.gridInfo}>
                 <>
