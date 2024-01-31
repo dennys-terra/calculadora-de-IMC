@@ -30,6 +30,7 @@ const App = () => {
 
   return (
   <>
+    <div className={styles.main}>
     <div>
       <header>
         <div className={styles.headerContainer}>
@@ -83,6 +84,7 @@ const App = () => {
         }
       </div>
       </div>
+    </div>
     </>
       );
     }
