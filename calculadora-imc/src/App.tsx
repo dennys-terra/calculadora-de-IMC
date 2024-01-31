@@ -48,15 +48,19 @@ const App = () => {
         placeholder='Digite a sua altura. EX: 1.5 (em métros)'  
         value={hightField > 0 ? hightField : ""}
         onChange={e => setHightField(Number(e.target.value))}
+        disabled={toShow ? true : false}
         />
 
         <input type="number"
         placeholder='Digite o seu peso. EX: 75.3 (em Kg)'  
         value={weightField > 0 ? weightField : ""}
         onChange={e => setWeightField(Number(e.target.value))}
+        disabled={toShow ? true : false}
+
         />
 
-        <button onClick={ handleCalculateButton}>Calcular IMC</button>
+        <button onClick={ handleCalculateButton} disabled={!toShow && hightField && weightField ? false : true}
+>Calcular IMC</button>
       </div>
       
       
